@@ -1,0 +1,4 @@
+node_modules/
+.eslintrc.json
+.sass-lint.yml
+yarn-error.log
