@@ -61,7 +61,10 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-security": "^1.4.0",
+    "fresh": "^0.5.2",
+    "hoek": "^6.1.2",
     "jest": "^23.6.0",
+    "mime": "^2.4.0",
     "raf": "3.3.2",
     "react-test-renderer": "16.0.0",
     "webpack-dev-server": "2.5.1"
