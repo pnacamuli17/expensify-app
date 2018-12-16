@@ -50,7 +50,9 @@ test('should remove expense from firebase', (done) => {
     return database.ref(`expenses/${id}`).once('value');
   }).then((snapshot) => {
     expect(snapshot.val()).toBeFalsy();
+
     done();
+    
   });
 });
 
@@ -83,7 +85,9 @@ test('should edit expense from firebsae', (done) => {
     return database.ref(`expenses/${id}`).once('value');
   }).then((snapshot) => {
     expect(snapshot.val().amount).toBe(updates.amount);
+
     done();
+
   });
 });
 
@@ -119,7 +123,9 @@ test('should add expense to database and store', (done) => {
     return database.ref(`expenses/${actions[0].expense.id}`).once('value');
   }).then((snapshot) => {
     expect(snapshot.val()).toEqual(expenseData);
+
     done();
+
   });
 });
 
@@ -145,7 +151,9 @@ test('should add expense with defaults to database and store', (done) => {
     return database.ref(`expenses/${actions[0].expense.id}`).once('value');
   }).then((snapshot) => {
     expect(snapshot.val()).toEqual(expenseDefaults);
+
     done();
+
   });
 });
 
@@ -168,6 +176,8 @@ test('should fetch the expenses from firebase', (done) => {
       type: 'SET_EXPENSES',
       expenses,
     })
+
     done();
+
   });
 });
